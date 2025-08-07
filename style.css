@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Inter, sans-serif;
+    background-color: black;
+    color: white;
+}
+:root{
+    --primary-color: #ff7613;
+    --text-color: #727171;
+}
+html {
+    font-size: 10px;
+}
+
+/* Common Styles */
+a {
+    text-decoration: none;
+    color: white;
+ }
+img {
+    width: 100%;
+}
+.description {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+.title {
+    color: var(--primary-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.singleCol {
+    grid-column: 1 / -1;
+    margin-bottom: 2%;
+}
+
+/* Layout */
+.center {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    padding: 5rem;
+    background: #070707;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+/* Profile */
+.profileContainer {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: -2rem;
+}
+.profilePic {
+    max-width: 150px;
+}
+.name {
+    margin: 2rem 0;
+}
+.firstName {
+    padding: 0 1rem;
+    font-weight: 200;
+    color: white;
+    font-size: clamp(2rem, 8vw, 4rem);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: -0.8rem;
+}
+.lastName {
+    font-weight:700;
+    color: var(--primary-color);
+    font-size: clamp(2.5rem, 15vw, 7rem);
+    text-transform: uppercase;
+    display: block;
+}
+
+/* Job Descprition */
+.jobTitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* Expertise */
+.t1 {
+    margin-bottom: 3rem;
+}
+.skillBox {
+    border: var(--text-color) solid;
+    border-radius: 8px;
+    padding: 5px 10px;
+    border-width: 1px;
+    color: var(--text-color);
+    margin-right: 1rem;
+}
+.skillBox:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+/* Education */
+.edu {
+    margin-bottom: 3rem;
+}
+
+/* Experience */
+
+.exp {
+    margin-bottom: 3rem;
+}
+
